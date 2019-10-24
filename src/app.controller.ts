@@ -9,7 +9,6 @@ const deadline = new Date(new Date().setHours(0, 2, 5))
 
 @Controller()
 export class AppController {
-  res = null
   constructor(private readonly repo: InMemoryDishRepository) {}
   @Get("todays-menu")
   root(@Res() res: Response) {
