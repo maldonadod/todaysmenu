@@ -5,7 +5,7 @@ import { Response } from 'express';
 import View from './view';
 
 const getCurrentTime = () => new Date()
-const deadline = new Date(new Date().setHours(20, 0, 0))
+const deadline = new Date(new Date().setHours(0, 2, 5))
 
 @Controller()
 export class AppController {
